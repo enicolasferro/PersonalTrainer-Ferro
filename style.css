@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 413px){
+.layout__index, .layout__entrenamientos{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "navbar navbar"
+                          "section section"
+                          "footer footer";
+    grid-template-rows: 70px auto 70px;
+}
+
+/* NAVBAR */
+.navbar{
+    grid-area: navbar;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+.navbar__titulo{
+    display: flex;
+    flex-direction: row;
+   
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+}
+.logo{
+    width: 50px;
+}
+.navbar__nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+.nav-link{
+    color: white;
+    font-size: 16px;
+   
+    padding: 12px 12px;
+    text-decoration: none;
+    text-transform: uppercase;   
+}
+.nav-link-active{
+    background-color: red;
+}
+.nav-link:hover{
+    background-color: red;
+}
+
+/* INDEX SECTION*/
+.section__index{
+    grid-area: section;
+    background: no-repeat, url(IMG/training2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    opacity: 0.9;
+    color: white;
+    background-size: 100% 100%;
+    height: 100%;
+}
+.section__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fondo__titulo{
+    font-size: 80px;
+    font-weight: 1000;
+    color: red;
+    padding: 20px;
+}
+.fondo__titulo--subtitulo{
+    font-size: 40px;
+    padding: 1px;
+}
+.boton__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boton__vermas{
+    color: white;
+    font-size: 30px;
+    border: 1px, solid, red;
+    background-color: red;
+    margin-top: 20px;
+    padding: 20px;   
+}
+
+/*FOOTER*/
+.footer{
+    grid-area: footer;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__texto{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 50px;
+    color: white;
+}
+.footer__icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 80px;
+}
+.whatsapp{
+    height: 50px;
+}
+.instagram{
+    height: 50px;
+}
+
+/* ENTRENAMIENTOS SECTION*/
+.section__titulo--entrenamientos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+.entrenamientos--titulo{
+    color: red;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;    
+}
+.entrenamientos--subtitulo{
+    margin-top: 15px;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
+.section__cards{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    text-align: center;
+    padding-top: 100px;
+    width: auto;
+}
+.cards__img{
+    height: 100px;
+    width: 100px;
+}
+.card__musculacion{
+    transform: skew(-10deg);
+    margin-left: 30px;
+}
+.card__cardio, .card__funcional, .card__stretching{
+    border-left: 1px dashed black;
+    transform: skew(-10deg);
+}
+.cards__titulo{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.cards__texto{
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 2.5;
+}
+}
+
+/* VISTA MOBILE (Uso el tamaño de mi celular, Galaxy S20FE */
+
+@media only screen and (min-width: 0px) and (max-width: 412px){
+.layout__index, .layout__entrenamientos{
+    display: grid;
+    grid-template-areas: "navbar navbar"
+                         "section section"
+                         "footer footer";
+    grid-template-rows: 105px 1fr 70px;
+    height: 100vh;
+}
+.navbar{
+    grid-area: navbar;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+.navbar__titulo{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 8px;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+}
+.navbar__nav{
+    display: flex;
+    flex-direction: row;        
+}
+.nav-link{
+    color: white;
+    font-size: 10px;
+    padding: 12px 12px;
+    text-decoration: none;
+    text-transform: uppercase;   
+}
+.nav-link-active{
+    background-color: red;
+}
+.nav-link:hover{
+    background-color: red;
+}
+
+/* INDEX SECTION*/
+
+.section__index{
+    grid-area: section;
+    background: no-repeat, url(IMG/training2.jpg);
+    opacity: 0.9;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    opacity: 0.9;
+    color: white;
+}
+.section__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fondo__titulo{
+    font-size: 65px;
+    font-weight: 1000;
+    color: red;
+    padding: 20px;
+}
+.fondo__titulo--subtitulo{
+    font-size: 30px;
+    padding: 1px;
+}
+.boton__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boton__vermas{
+    color: white;
+    font-size: 25px;
+    border: 1px, solid, red;
+    background-color: red;
+    margin-top: 15px;
+    padding: 15px;   
+}
+
+/* ENTRENAMIENTOS SECTION*/
+
+.section__titulo--entrenamientos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+.entrenamientos--titulo{
+    color: red;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;    
+}
+.entrenamientos--subtitulo{
+    margin-top: 15px;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.section__cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    text-align: center;
+    padding-top: 100px;
+    width: auto;
+    align-items: center;
+}
+.cards__img{
+    height: 100px;
+    width: 100px;
+}
+.cards__titulo{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.cards__texto{
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 2.5;
+}
+}
+
+/*FOOTER*/
+.footer{
+    grid-area: footer;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__texto{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 50px;
+    color: white;
+}
+.footer__icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 80px;
+}
+.whatsapp{
+    height: 50px;
+}
+.instagram{
+    height: 50px;
+}
+
+/* RESPONSIVE DESKTOP */
+@media only screen and (min-width: 413px) and (max-width: 945px){
+.layout__index, .layout__entrenamientos{
+    grid-template-rows: 105px 1fr 70px;
+}
+.navbar{
+    grid-area: navbar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.navbar__titulo{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 8px;
+    align-items: center;      
+}
+.nav-link{
+    font-size: 10px;
+    padding: 12px 12px;
+}
+.section__titulo--entrenamientos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.entrenamientos--titulo{
+    font-size: 30px;
+}
+.entrenamientos--subtitulo{
+    margin-top: 15px;
+    font-size: 50px;
+    text-align: center;
+}
+.section__cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    text-align: center;
+    padding-top: 100px;
+    width: auto;
+    align-items: center;
+}
+.cards__titulo{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.cards__texto{
+    padding: 15px;
+    font-size: 16px;
+    line-height: 2.5;
+}
+.card__cardio, .card__funcional, .card__stretching{
+    transform: none;
+    border: none;
+}
+}
+
