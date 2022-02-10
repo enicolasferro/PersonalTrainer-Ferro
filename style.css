@@ -89,10 +89,12 @@
     font-weight: 1000;
     color: red;
     padding: 20px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 .fondo__titulo--subtitulo{
     font-size: 40px;
     padding: 1px;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
 }
 .boton__container{
     display: flex;
@@ -106,7 +108,8 @@
     border: 1px, solid, red;
     background-color: red;
     margin-top: 20px;
-    padding: 20px;   
+    padding: 20px;
+    -webkit-text-stroke: 0.3px rgb(0, 0, 0);
 }
 
 /*FOOTER*/
@@ -130,6 +133,13 @@
     flex-direction: row;
     justify-content: right;
     margin-right: 80px;
+}
+.animate__animated, .animate__fadeOutRight .contactame{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    --animate-duration: 3.5s;
+
 }
 .whatsapp{
     height: 50px;
