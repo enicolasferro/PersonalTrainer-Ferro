@@ -275,10 +275,12 @@
     font-weight: 1000;
     color: red;
     padding: 20px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 .fondo__titulo--subtitulo{
     font-size: 30px;
     padding: 1px;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
 }
 .boton__container{
     display: flex;
@@ -292,7 +294,8 @@
     border: 1px, solid, red;
     background-color: red;
     margin-top: 15px;
-    padding: 15px;   
+    padding: 15px;
+    -webkit-text-stroke: 0.3px rgb(0, 0, 0);
 }
 
 /* ENTRENAMIENTOS SECTION*/
