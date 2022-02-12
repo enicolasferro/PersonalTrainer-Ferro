@@ -11,7 +11,7 @@
 
 /* VISTA DESKTOP */
 @media only screen and (min-width: 413px){
-.layout__index, .layout__entrenamientos{
+.layout__index, .layout__entrenamientos, .layout__sobremi{
     display: grid;
     height: 100vh;
     grid-template-areas: "navbar navbar"
@@ -112,42 +112,6 @@
     -webkit-text-stroke: 0.3px rgb(0, 0, 0);
 }
 
-/*FOOTER*/
-.footer{
-    grid-area: footer;
-    background-color: black;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.footer__texto{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    margin-left: 50px;
-    color: white;
-}
-.footer__icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    margin-right: 80px;
-}
-.animate__animated, .animate__fadeOutRight .contactame{
-    color: white;
-    font-size: 40px;
-    font-weight: 700;
-    --animate-duration: 3.5s;
-
-}
-.whatsapp{
-    height: 50px;
-}
-.instagram{
-    height: 50px;
-}
-
 /* ENTRENAMIENTOS SECTION*/
 .section__titulo--entrenamientos{
     display: flex;
@@ -199,11 +163,83 @@
     line-height: 2.5;
 }
 }
+/* SOBRE MI SECTION */
 
+.section__sobremi{
+    grid-area: section;
+    display: flex;
+    flex-direction: row;
+}
+.sobremi-img{
+    width: 55%;
+    height: 100%
+}
+.section__container--img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.section__container--texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: center;
+}
+.container__titulo{
+    font-size: 80px;
+    font-weight: 1000;
+    color: red;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+}
+.container__texto{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 2.5;
+    margin-right: 60px;
+}
+/*FOOTER*/
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__texto{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 50px;
+    color: white;
+}
+.footer__icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 80px;
+}
+.animate__animated, .animate__fadeOutRight .contactame{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    --animate-duration: 3.5s;
+}
+.whatsapp{
+    height: 50px;
+}
+.instagram{
+    height: 50px;
+}
 /* VISTA MOBILE (Uso el tamaño de mi celular, Galaxy S20FE */
 
 @media only screen and (min-width: 0px) and (max-width: 412px){
-.layout__index, .layout__entrenamientos{
+.layout__index, .layout__entrenamientos, .layout__sobremi{
     display: grid;
     grid-template-areas: "navbar navbar"
                          "section section"
@@ -249,7 +285,6 @@
 .nav-link:hover{
     background-color: red;
 }
-
 /* INDEX SECTION*/
 
 .section__index{
@@ -297,7 +332,6 @@
     padding: 15px;
     -webkit-text-stroke: 0.3px rgb(0, 0, 0);
 }
-
 /* ENTRENAMIENTOS SECTION*/
 
 .section__titulo--entrenamientos{
@@ -343,6 +377,45 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 2.5;
+}
+/* SOBRE MI SECTION */
+
+.section__sobremi{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.sobremi-img{
+    width: 55%;
+    height: 100%
+}
+.section__container--img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.section__container--texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.container__titulo{
+    font-size: 80px;
+    font-weight: 1000;
+    color: red;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+}
+.container__texto{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 2.5;
+    margin: 0px;
 }
 }
 
