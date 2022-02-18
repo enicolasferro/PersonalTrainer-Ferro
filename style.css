@@ -452,7 +452,7 @@
 
 /* RESPONSIVE DESKTOP */
 @media only screen and (min-width: 413px) and (max-width: 945px){
-.layout__index, .layout__entrenamientos{
+.layout__index, .layout__entrenamientos, .layout__sobremi{
     grid-template-rows: 105px 1fr 70px;
 }
 .navbar{
@@ -510,6 +510,14 @@
 .card__cardio, .card__funcional, .card__stretching{
     transform: none;
     border: none;
+}
+.section__sobremi{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+}
+.section__container--texto{
+    align-items: center;
 }
 }
 
