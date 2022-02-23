@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Trainer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 <body>
-    <div class="layout">
+    <div class="layout__planes">
         <nav class="navbar">
             <div class="navbar__titulo">
                 <img class= "logo" src="IMG/logo.pesa.png">
@@ -25,39 +25,77 @@
             </div>
         </nav>
         <section class="section__planes">
-            <div class="section__container--planes">
-                <h2 class="section__titulo--planes">Precios y Planes</h2>
+            <div class="section__titulo--planes">
+                <h1 class="planes--titulo">
+                    Precios y Planes
+                </h1>
             </div>
-            <div class="container__plan">
-                <h3 class="container__titulo--plan">Plan1</h3>
-                <p class="container__texto--plan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi totam nulla sunt minus deserunt, beatae molestiae, ut consectetur, modi iure aspernatur! Voluptatum officia obcaecati iure veniam optio veritatis ducimus modi!</p>
-            </div>
-            <div class="container__plan">
-                <h3 class="container__titulo--plan">Plan2</h3>
-                <p class="container__texto--plan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi totam nulla sunt minus deserunt, beatae molestiae, ut consectetur, modi iure aspernatur! Voluptatum officia obcaecati iure veniam optio veritatis ducimus modi!</p>
-            </div>
-            <div class="container__plan">
-                <h3 class="container__titulo--plan">Plan3</h3>
-                <p class="container__texto--plan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi totam nulla sunt minus deserunt, beatae molestiae, ut consectetur, modi iure aspernatur! Voluptatum officia obcaecati iure veniam optio veritatis ducimus modi!</p>
-            </div>
-            <div class="container__plan">
-                <h3 class="container__titulo--plan">Plan4</h3>
-                <p class="container__texto--plan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi totam nulla sunt minus deserunt, beatae molestiae, ut consectetur, modi iure aspernatur! Voluptatum officia obcaecati iure veniam optio veritatis ducimus modi!</p>
-            </div>
-            <footer class="footer">
-                <div class="footer__texto">
-                    <p>
-                    Todos los derechos reservados
-                    </p>
+            <div class="container__planes">
+                <div class="plan__diario">
+                    <h2 class="container__titulo--plan">Plan Diario</h2>
+                    <div class="container__precio--plan">
+                        <h3>$800</h3>
+                    </div>
+                    <div class="container__items--plan">
+                        <ul>
+                            <li>CLASES DE 1 HORA</li>   
+                            <li>MUSCULACIÓN</li>
+                            <li>CARDIO</li>
+                            <li>FUNCIONAL</li>
+                            <li>STRETCHING</li>
+                        </ul>
+                    </div>
+               </div>
+                <div class="plan__semanal">
+                    <h2 class="container__titulo--plan">Plan Semanal</h2>
+                    <div class="container__precio--plan">
+                        <h3>$2000</h3>
+                    </div>
+                    <div class="container__items--plan">
+                        <ul>
+                            <li>3 CLASES POR SEMANA</li> 
+                            <li>CLASES DE 1 HORA</li>   
+                            <li>MUSCULACIÓN</li>
+                            <li>CARDIO</li>
+                            <li>FUNCIONAL</li>
+                            <li>STRETCHING</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer__icons">
-                    <a href="https://wa.me/5491134943491">
-                        <img class="whatsapp" src="IMG/whatsapp.jpg">
-                    </a>
-                    <a href="https://www.instagram.com/?hl=es-la">
-                        <img class="instagram" src="IMG/instagram.png">
-                    </a>
+                <div class="plan__mensual">
+                    <h2 class="container__titulo--plan">Plan Mensual</h2>
+                    <div class="container__precio--plan">
+                        <h3>$7000</h3>
+                    </div>
+                    <div class="container__items--plan">
+                        <ul>
+                            <li>3 CLASES POR SEMANA</li> 
+                            <li>CLASES DE 1 HORA</li>   
+                            <li>MUSCULACIÓN</li>
+                            <li>CARDIO</li>
+                            <li>FUNCIONAL</li>
+                            <li>STRETCHING</li>
+                            <li>PLAN NUTRICIONAL</li>
+                        </ul>
+                    </div>
                 </div>
-            </footer>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__texto">
+                <p>
+                Todos los derechos reservados
+                </p>
+            </div>
+            <div class="footer__icons">
+                <a href="https://wa.me/5491134943491">
+                    <img class="whatsapp" src="IMG/whatsapp.jpg">
+                </a>
+                <a href="https://www.instagram.com/?hl=es-la">
+                    <img class="instagram" src="IMG/instagram.png">
+                 </a>
+             </div>
+        </footer>
+    </div>
 </body>
 </html>
