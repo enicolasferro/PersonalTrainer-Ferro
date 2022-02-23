@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+// Variables
+$plan-red: #da4357;
+$special-font: 'Bebas Neue', cursive;
+$normal-font: 'Open Sans', sans-serif;
 
 // Maps
 
 $estilos:(
     stroke: 0.5px rgb(0, 0, 0),
-    rojo: red,
-    iconos: 50px
+    rojo: #F92C00,
+    iconos: 50px,
 );
 
 // Mixins
@@ -47,7 +51,7 @@ $estilos:(
         background-color: black;
         align-items: center;
         justify-content: space-between;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $normal-font;
         color: white;
 
         .navbar__titulo{
@@ -90,7 +94,7 @@ $estilos:(
         background-attachment: fixed;
         @include flex-column;
         justify-content: center;
-        font-family: 'Bebas Neue', cursive;
+        font-family: $special-font;
         opacity: 0.9;
         color: white;
         background-size: 100% 100%;
@@ -123,7 +127,7 @@ $estilos:(
             .boton__vermas{
                 color: white;
                 font-size: 30px;
-                border: 1px, solid, red;
+                border: 1px, solid, map-get($estilos, rojo);
                 background-color: map-get($estilos, rojo);
                 margin-top: 20px;
                 padding: 20px;
@@ -157,14 +161,14 @@ $estilos:(
                 font-size: 80px;
                 font-weight: 1000;
                 color: map-get($estilos, rojo);
-                font-family: 'Bebas Neue', cursive;
+                font-family: $special-font;
                 display: flex;
                 -webkit-text-stroke: map-get($estilos, stroke);
             }
 
             .container__texto{
-                font-family: 'Open Sans', sans-serif;
-                font-size: 16px;
+                font-family: $normal-font;
+                font-size: 20px;
                 line-height: 2.5;
                 margin-right: 60px;
                 font-weight: bold;
@@ -180,13 +184,13 @@ $estilos:(
         .entrenamientos--titulo{
             color: map-get($estilos, rojo);
             font-size: 30px;
-            font-family: 'Bebas Neue', cursive;
+            font-family: $special-font;
             letter-spacing: 3px;    
         }
         .entrenamientos--subtitulo{
             margin-top: 15px;
             font-size: 50px;
-            font-family: 'Bebas Neue', cursive;
+            font-family: $special-font;
             letter-spacing: 3px;
         }
     }
@@ -216,7 +220,7 @@ $estilos:(
             }
             .cards__texto{
                 padding: 15px;
-                font-family: 'Open Sans', sans-serif;
+                font-family: $normal-font;
                 font-size: 16px;
                 line-height: 2.5;
                 font-weight: bold;
@@ -237,7 +241,7 @@ $estilos:(
                 color: map-get($estilos, rojo);
                 font-size: 65px;
                 font-weight: 1000;
-                font-family: 'Bebas Neue', cursive;
+                font-family: $special-font;
                 letter-spacing: 3px;
                 -webkit-text-stroke: map-get($estilos, stroke)    
             }
@@ -257,7 +261,7 @@ $estilos:(
                 padding: 40px 60px 40px 60px;
                 
                     &:hover{
-                        background: #da4357;
+                        background: $plan-red;
                         color: white;
                         box-shadow: 0 0 15px rgba(0,0,0,1);
                         transform: scale(1.1);
@@ -267,14 +271,14 @@ $estilos:(
                 .container__titulo--plan{
                     color: white;
                     font-size: 40px;
-                    font-family: 'Open Sans', sans-serif;
+                    font-family: $normal-font;
                     letter-spacing: 3px;
                     margin-top: 20px;
                     margin-bottom: 40px;    
                 }
                 .container__precio--plan{
                     border-radius: 50%;
-                    border:2px solid #da4357;
+                    border:2px solid $plan-red;
                     margin: 5% auto 0 auto;
                     font-size: 35px;
                     color: white;
@@ -283,7 +287,7 @@ $estilos:(
                 .container__items--plan{
                 padding: 15px;
                 color: white;
-                font-family: 'Open Sans', sans-serif;
+                font-family: $normal-font;
                 font-size: 16px;
                 line-height: 2.5;
                 font-weight: bold;
@@ -339,7 +343,7 @@ $estilos:(
         @include flex-column;
         align-items: center;
         justify-content: flex-start;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $normal-font;
         color: white;
 
         .navbar__titulo{
@@ -380,7 +384,7 @@ $estilos:(
         background-size: 100% 100%;
         @include flex-column;
         justify-content: center;
-        font-family: 'Bebas Neue', cursive;
+        font-family: $special-font;
         opacity: 0.9;
         color: white;
 
@@ -392,7 +396,7 @@ $estilos:(
             .fondo__titulo{
                 font-size: 65px;
                 font-weight: 1000;
-                color: red;
+                color: map-get($estilos, rojo);
                 padding: 20px;
                 -webkit-text-stroke: map-get($estilos, stroke);
             }
@@ -412,8 +416,8 @@ $estilos:(
             .boton__vermas{
                 color: white;
                 font-size: 25px;
-                border: 1px, solid, red;
-                background-color: red;
+                border: 1px, solid, map-get($estilos, rojo);
+                background-color: map-get($estilos, rojo);
                 margin-top: 15px;
                 padding: 15px;
                 -webkit-text-stroke: map-get($estilos, stroke);
@@ -446,13 +450,13 @@ $estilos:(
             .container__titulo{
                 font-size: 80px;
                 font-weight: 1000;
-                color: red;
-                font-family: 'Bebas Neue', cursive;
+                color: map-get($estilos, rojo);
+                font-family: $special-font;
                 display: flex;
                 -webkit-text-stroke: map-get($estilos, stroke);
             }
             .container__texto{
-                font-family: 'Open Sans', sans-serif;
+                font-family: $normal-font;
                 font-size: 16px;
                 line-height: 2.5;
                 margin: 0px;
@@ -469,14 +473,14 @@ $estilos:(
         .entrenamientos--titulo{
             color: map-get($estilos, rojo);
             font-size: 30px;
-            font-family: 'Bebas Neue', cursive;
+            font-family: $special-font;
             letter-spacing: 3px;
         }
         
         .entrenamientos--subtitulo{
             margin-top: 15px;
             font-size: 50px;
-            font-family: 'Bebas Neue', cursive;
+            font-family: $special-font;
             letter-spacing: 3px;
             text-align: center;
         }
@@ -501,7 +505,7 @@ $estilos:(
         }
         .cards__texto{
             padding: 15px;
-            font-family: 'Open Sans', sans-serif;
+            font-family: $normal-font;
             font-size: 16px;
             line-height: 2.5;
         }
@@ -521,7 +525,7 @@ $estilos:(
                     color: map-get($estilos, rojo);
                     font-size: 65px;
                     font-weight: 1000;
-                    font-family: 'Bebas Neue', cursive;
+                    font-family: $special-font;
                     letter-spacing: 3px;
                     -webkit-text-stroke: map-get($estilos, stroke)    
                 }
@@ -540,7 +544,7 @@ $estilos:(
                     padding: 40px 60px 40px 60px;
                     
                         &:hover{
-                            background: #da4357;
+                            background: $plan-red;
                             color: white;
                             box-shadow: 0 0 15px rgba(0,0,0,1);
                             transform: scale(1.1);
@@ -550,14 +554,14 @@ $estilos:(
                     .container__titulo--plan{
                         color: white;
                         font-size: 40px;
-                        font-family: 'Open Sans', sans-serif;
+                        font-family: $normal-font;
                         letter-spacing: 3px;
                         margin-top: 20px;
                         margin-bottom: 40px;    
                     }
                     .container__precio--plan{
                         border-radius: 50%;
-                        border:2px solid #da4357;
+                        border:2px solid $plan-red;
                         margin: 5% auto 0 auto;
                         font-size: 35px;
                         color: white;
@@ -566,7 +570,7 @@ $estilos:(
                     .container__items--plan{
                     padding: 15px;
                     color: white;
-                    font-family: 'Open Sans', sans-serif;
+                    font-family: $normal-font;
                     font-size: 16px;
                     line-height: 2.5;
                     font-weight: bold;

@@ -27,7 +27,7 @@
       background-color: black;
       align-items: center;
       justify-content: space-between;
-      font-family: 'Open Sans', sans-serif;
+      font-family: "Open Sans", sans-serif;
       color: white; }
       .layout__index .navbar .navbar__titulo, .layout__entrenamientos .navbar .navbar__titulo, .layout__sobremi .navbar .navbar__titulo, .layout__planes .navbar .navbar__titulo {
         display: flex;
@@ -47,9 +47,9 @@
           text-decoration: none;
           text-transform: uppercase; }
           .layout__index .navbar .navbar__nav .nav-link:hover, .layout__entrenamientos .navbar .navbar__nav .nav-link:hover, .layout__sobremi .navbar .navbar__nav .nav-link:hover, .layout__planes .navbar .navbar__nav .nav-link:hover {
-            background-color: red; }
+            background-color: #F92C00; }
           .layout__index .navbar .navbar__nav .nav-link .nav-link-active, .layout__entrenamientos .navbar .navbar__nav .nav-link .nav-link-active, .layout__sobremi .navbar .navbar__nav .nav-link .nav-link-active, .layout__planes .navbar .navbar__nav .nav-link .nav-link-active {
-            background-color: red; }
+            background-color: #F92C00; }
     .layout__index .section__index, .layout__entrenamientos .section__index, .layout__sobremi .section__index, .layout__planes .section__index {
       grid-area: section;
       background: no-repeat, url(../IMG/training2.jpg);
@@ -59,7 +59,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       opacity: 0.9;
       color: white;
       background-size: 100% 100%;
@@ -72,7 +72,7 @@
         .layout__index .section__index .section__container .fondo__titulo, .layout__entrenamientos .section__index .section__container .fondo__titulo, .layout__sobremi .section__index .section__container .fondo__titulo, .layout__planes .section__index .section__container .fondo__titulo {
           font-size: 80px;
           font-weight: 1000;
-          color: red;
+          color: #F92C00;
           padding: 20px;
           -webkit-text-stroke: 0.5px black; }
         .layout__index .section__index .section__container .fondo__titulo--subtitulo, .layout__entrenamientos .section__index .section__container .fondo__titulo--subtitulo, .layout__sobremi .section__index .section__container .fondo__titulo--subtitulo, .layout__planes .section__index .section__container .fondo__titulo--subtitulo {
@@ -87,8 +87,8 @@
         .layout__index .section__index .boton__container .boton__vermas, .layout__entrenamientos .section__index .boton__container .boton__vermas, .layout__sobremi .section__index .boton__container .boton__vermas, .layout__planes .section__index .boton__container .boton__vermas {
           color: white;
           font-size: 30px;
-          border: 1px, solid, red;
-          background-color: red;
+          border: 1px, solid, #F92C00;
+          background-color: #F92C00;
           margin-top: 20px;
           padding: 20px;
           -webkit-text-stroke: 0.3px black; }
@@ -113,13 +113,13 @@
         .layout__index .section__sobremi .section__container--texto .container__titulo, .layout__entrenamientos .section__sobremi .section__container--texto .container__titulo, .layout__sobremi .section__sobremi .section__container--texto .container__titulo, .layout__planes .section__sobremi .section__container--texto .container__titulo {
           font-size: 80px;
           font-weight: 1000;
-          color: red;
-          font-family: 'Bebas Neue', cursive;
+          color: #F92C00;
+          font-family: "Bebas Neue", cursive;
           display: flex;
           -webkit-text-stroke: 0.5px black; }
         .layout__index .section__sobremi .section__container--texto .container__texto, .layout__entrenamientos .section__sobremi .section__container--texto .container__texto, .layout__sobremi .section__sobremi .section__container--texto .container__texto, .layout__planes .section__sobremi .section__container--texto .container__texto {
-          font-family: 'Open Sans', sans-serif;
-          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          font-size: 20px;
           line-height: 2.5;
           margin-right: 60px;
           font-weight: bold; }
@@ -129,14 +129,14 @@
       align-items: center;
       margin-top: 25px; }
       .layout__index .section__titulo--entrenamientos .entrenamientos--titulo, .layout__entrenamientos .section__titulo--entrenamientos .entrenamientos--titulo, .layout__sobremi .section__titulo--entrenamientos .entrenamientos--titulo, .layout__planes .section__titulo--entrenamientos .entrenamientos--titulo {
-        color: red;
+        color: #F92C00;
         font-size: 30px;
-        font-family: 'Bebas Neue', cursive;
+        font-family: "Bebas Neue", cursive;
         letter-spacing: 3px; }
       .layout__index .section__titulo--entrenamientos .entrenamientos--subtitulo, .layout__entrenamientos .section__titulo--entrenamientos .entrenamientos--subtitulo, .layout__sobremi .section__titulo--entrenamientos .entrenamientos--subtitulo, .layout__planes .section__titulo--entrenamientos .entrenamientos--subtitulo {
         margin-top: 15px;
         font-size: 50px;
-        font-family: 'Bebas Neue', cursive;
+        font-family: "Bebas Neue", cursive;
         letter-spacing: 3px; }
     .layout__index .section__cards, .layout__entrenamientos .section__cards, .layout__sobremi .section__cards, .layout__planes .section__cards {
       display: flex;
@@ -160,7 +160,7 @@
         margin-bottom: 30px; }
       .layout__index .section__cards .cards__texto, .layout__entrenamientos .section__cards .cards__texto, .layout__sobremi .section__cards .cards__texto, .layout__planes .section__cards .cards__texto {
         padding: 15px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-size: 16px;
         line-height: 2.5;
         font-weight: bold; }
@@ -174,10 +174,10 @@
         margin-top: 25px;
         margin-bottom: 20px; }
         .layout__index .section__planes .section__titulo--planes .planes--titulo, .layout__entrenamientos .section__planes .section__titulo--planes .planes--titulo, .layout__sobremi .section__planes .section__titulo--planes .planes--titulo, .layout__planes .section__planes .section__titulo--planes .planes--titulo {
-          color: red;
+          color: #F92C00;
           font-size: 65px;
           font-weight: 1000;
-          font-family: 'Bebas Neue', cursive;
+          font-family: "Bebas Neue", cursive;
           letter-spacing: 3px;
           -webkit-text-stroke: 0.5px black; }
       .layout__index .section__planes .container__planes, .layout__entrenamientos .section__planes .container__planes, .layout__sobremi .section__planes .container__planes, .layout__planes .section__planes .container__planes {
@@ -203,7 +203,7 @@
           .layout__index .section__planes .container__planes .plan__diario .container__titulo--plan, .layout__index .section__planes .container__planes .plan__semanal .container__titulo--plan, .layout__index .section__planes .container__planes .plan__mensual .container__titulo--plan, .layout__entrenamientos .section__planes .container__planes .plan__diario .container__titulo--plan, .layout__entrenamientos .section__planes .container__planes .plan__semanal .container__titulo--plan, .layout__entrenamientos .section__planes .container__planes .plan__mensual .container__titulo--plan, .layout__sobremi .section__planes .container__planes .plan__diario .container__titulo--plan, .layout__sobremi .section__planes .container__planes .plan__semanal .container__titulo--plan, .layout__sobremi .section__planes .container__planes .plan__mensual .container__titulo--plan, .layout__planes .section__planes .container__planes .plan__diario .container__titulo--plan, .layout__planes .section__planes .container__planes .plan__semanal .container__titulo--plan, .layout__planes .section__planes .container__planes .plan__mensual .container__titulo--plan {
             color: white;
             font-size: 40px;
-            font-family: 'Open Sans', sans-serif;
+            font-family: "Open Sans", sans-serif;
             letter-spacing: 3px;
             margin-top: 20px;
             margin-bottom: 40px; }
@@ -217,7 +217,7 @@
           .layout__index .section__planes .container__planes .plan__diario .container__items--plan, .layout__index .section__planes .container__planes .plan__semanal .container__items--plan, .layout__index .section__planes .container__planes .plan__mensual .container__items--plan, .layout__entrenamientos .section__planes .container__planes .plan__diario .container__items--plan, .layout__entrenamientos .section__planes .container__planes .plan__semanal .container__items--plan, .layout__entrenamientos .section__planes .container__planes .plan__mensual .container__items--plan, .layout__sobremi .section__planes .container__planes .plan__diario .container__items--plan, .layout__sobremi .section__planes .container__planes .plan__semanal .container__items--plan, .layout__sobremi .section__planes .container__planes .plan__mensual .container__items--plan, .layout__planes .section__planes .container__planes .plan__diario .container__items--plan, .layout__planes .section__planes .container__planes .plan__semanal .container__items--plan, .layout__planes .section__planes .container__planes .plan__mensual .container__items--plan {
             padding: 15px;
             color: white;
-            font-family: 'Open Sans', sans-serif;
+            font-family: "Open Sans", sans-serif;
             font-size: 16px;
             line-height: 2.5;
             font-weight: bold; } }
@@ -261,7 +261,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      font-family: 'Open Sans', sans-serif;
+      font-family: "Open Sans", sans-serif;
       color: white; }
       .layout__index .navbar .navbar__titulo, .layout__entrenamientos .navbar .navbar__titulo, .layout__sobremi .navbar .navbar__titulo, .layout__planes .navbar .navbar__titulo {
         display: flex;
@@ -282,9 +282,9 @@
           text-decoration: none;
           text-transform: uppercase; }
           .layout__index .navbar .navbar__nav .nav-link:hover, .layout__entrenamientos .navbar .navbar__nav .nav-link:hover, .layout__sobremi .navbar .navbar__nav .nav-link:hover, .layout__planes .navbar .navbar__nav .nav-link:hover {
-            background-color: red; }
+            background-color: #F92C00; }
           .layout__index .navbar .navbar__nav .nav-link .nav-link-active, .layout__entrenamientos .navbar .navbar__nav .nav-link .nav-link-active, .layout__sobremi .navbar .navbar__nav .nav-link .nav-link-active, .layout__planes .navbar .navbar__nav .nav-link .nav-link-active {
-            background-color: red; }
+            background-color: #F92C00; }
   /* INDEX SECTION*/
   .section__index {
     grid-area: section;
@@ -294,7 +294,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     opacity: 0.9;
     color: white; }
     .section__index .section__container {
@@ -305,7 +305,7 @@
       .section__index .section__container .fondo__titulo {
         font-size: 65px;
         font-weight: 1000;
-        color: red;
+        color: #F92C00;
         padding: 20px;
         -webkit-text-stroke: 0.5px black; }
       .section__index .section__container .fondo__titulo--subtitulo {
@@ -320,8 +320,8 @@
       .section__index .boton__container .boton__vermas {
         color: white;
         font-size: 25px;
-        border: 1px, solid, red;
-        background-color: red;
+        border: 1px, solid, #F92C00;
+        background-color: #F92C00;
         margin-top: 15px;
         padding: 15px;
         -webkit-text-stroke: 0.5px black; }
@@ -348,12 +348,12 @@
       .section__sobremi .section__container--texto .container__titulo {
         font-size: 80px;
         font-weight: 1000;
-        color: red;
-        font-family: 'Bebas Neue', cursive;
+        color: #F92C00;
+        font-family: "Bebas Neue", cursive;
         display: flex;
         -webkit-text-stroke: 0.5px black; }
       .section__sobremi .section__container--texto .container__texto {
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-size: 16px;
         line-height: 2.5;
         margin: 0px;
@@ -365,14 +365,14 @@
     align-items: center;
     margin-top: 25px; }
     .section__titulo--entrenamientos .entrenamientos--titulo {
-      color: red;
+      color: #F92C00;
       font-size: 30px;
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       letter-spacing: 3px; }
     .section__titulo--entrenamientos .entrenamientos--subtitulo {
       margin-top: 15px;
       font-size: 50px;
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       letter-spacing: 3px;
       text-align: center; }
   .section__cards {
@@ -393,7 +393,7 @@
     margin-bottom: 30px; }
   .cards__texto {
     padding: 15px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 2.5; }
   /* Planes SECTION*/
@@ -407,10 +407,10 @@
       margin-top: 25px;
       margin-bottom: 20px; }
       .section__planes .section__titulo--planes .planes--titulo {
-        color: red;
+        color: #F92C00;
         font-size: 65px;
         font-weight: 1000;
-        font-family: 'Bebas Neue', cursive;
+        font-family: "Bebas Neue", cursive;
         letter-spacing: 3px;
         -webkit-text-stroke: 0.5px black; }
     .section__planes .container__planes {
@@ -435,7 +435,7 @@
         .section__planes .container__planes .plan__diario .container__titulo--plan, .section__planes .container__planes .plan__semanal .container__titulo--plan, .section__planes .container__planes .plan__mensual .container__titulo--plan {
           color: white;
           font-size: 40px;
-          font-family: 'Open Sans', sans-serif;
+          font-family: "Open Sans", sans-serif;
           letter-spacing: 3px;
           margin-top: 20px;
           margin-bottom: 40px; }
@@ -449,7 +449,7 @@
         .section__planes .container__planes .plan__diario .container__items--plan, .section__planes .container__planes .plan__semanal .container__items--plan, .section__planes .container__planes .plan__mensual .container__items--plan {
           padding: 15px;
           color: white;
-          font-family: 'Open Sans', sans-serif;
+          font-family: "Open Sans", sans-serif;
           font-size: 16px;
           line-height: 2.5;
           font-weight: bold; } }
