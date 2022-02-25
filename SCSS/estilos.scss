@@ -7,7 +7,6 @@ $special-font: 'Bebas Neue', cursive;
 $normal-font: 'Open Sans', sans-serif;
 
 // Maps
-
 $estilos:(
     stroke: 0.5px rgb(0, 0, 0),
     rojo: #F92C00,
@@ -15,7 +14,6 @@ $estilos:(
 );
 
 // Mixins
-
 @mixin flex-column{
     display:flex;
 	flex-direction:column;
@@ -24,6 +22,16 @@ $estilos:(
 @mixin flex-row{
     display:flex;
 	flex-direction:row;
+}
+
+// Extends
+%titulos{
+    color: map-get($estilos, rojo);
+    font-size: 80px;
+    font-weight: 1000;
+    font-family: $special-font;
+    letter-spacing: 3px;
+    -webkit-text-stroke: map-get($estilos, stroke)    
 }
 
 *{
@@ -35,18 +43,17 @@ $estilos:(
 }
 
 /* VISTA DESKTOP */
-@media only screen and (min-width: 413px){
 .layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes{
     display: grid;
     height: 100vh;
-    grid-template-areas: "navbar navbar"
+    grid-template-areas: "header header"
                          "section section"
                          "footer footer";
     grid-template-rows: 70px auto 70px;
 
-    /* NAVBAR */
-    .navbar{
-        grid-area: navbar;
+    /* HEADER */
+    .header{
+        grid-area: header;
         @include flex-row;
         background-color: black;
         align-items: center;
@@ -68,6 +75,10 @@ $estilos:(
             .navbar__nav{
                 @include flex-row;
 
+                .nav-link-active{
+                    background-color: map-get($estilos, rojo);
+                }
+
                 .nav-link{
                     color: white;
                     font-size: 16px;
@@ -78,13 +89,9 @@ $estilos:(
                         &:hover{
                             background-color: map-get($estilos, rojo);
                         } 
-                    
-                    .nav-link-active{
-                        background-color: map-get($estilos, rojo);
-                }
+                 }
             }
         }
-    }
     /* INDEX SECTION*/
     .section__index{
         grid-area: section;
@@ -106,11 +113,7 @@ $estilos:(
             align-items: center;
 
             .fondo__titulo{
-                font-size: 80px;
-                font-weight: 1000;
-                color: map-get($estilos, rojo);
-                padding: 20px;
-                -webkit-text-stroke: map-get($estilos, stroke);
+                @extend %titulos;
             }
 
             .fondo__titulo--subtitulo{
@@ -158,14 +161,9 @@ $estilos:(
             justify-content: center;
 
             .container__titulo{
-                font-size: 80px;
-                font-weight: 1000;
-                color: map-get($estilos, rojo);
-                font-family: $special-font;
-                display: flex;
-                -webkit-text-stroke: map-get($estilos, stroke);
+                @extend %titulos;
+                font-size: 65px;
             }
-
             .container__texto{
                 font-family: $normal-font;
                 font-size: 20px;
@@ -216,7 +214,7 @@ $estilos:(
             .cards__titulo{
                 font-size: 40px;
                 margin-top: 20px;
-                margin-bottom: 30px;
+                margin-bottom: 30px; 
             }
             .cards__texto{
                 padding: 15px;
@@ -238,12 +236,7 @@ $estilos:(
             margin-bottom: 20px;
             
             .planes--titulo{
-                color: map-get($estilos, rojo);
-                font-size: 65px;
-                font-weight: 1000;
-                font-family: $special-font;
-                letter-spacing: 3px;
-                -webkit-text-stroke: map-get($estilos, stroke)    
+                @extend %titulos;    
             }
         }
         .container__planes{
@@ -296,7 +289,7 @@ $estilos:(
         }
     } 
 }
-}
+
     /*FOOTER*/
     .footer{
         grid-area: footer;
@@ -325,20 +318,19 @@ $estilos:(
         }
     }
 }
-
 /* VISTA MOBILE (Uso el tamaño de mi celular, Galaxy S20FE */
 @media only screen and (min-width: 0px) and (max-width: 412px){
 .layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes{
     display: grid;
-    grid-template-areas: "navbar navbar"
+    grid-template-areas: "header header"
                          "section section"
                          "footer footer";
     grid-template-rows: 105px 1fr 70px;
     height: 100vh;
 
-    /* NAVBAR */
-    .navbar{
-        grid-area: navbar;
+    /* HEADER */
+    .header{
+        grid-area: header;
         background-color: black;
         @include flex-column;
         align-items: center;
@@ -585,8 +577,8 @@ $estilos:(
 .layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes{
     grid-template-rows: 105px 1fr 70px;
 
-    .navbar{
-        grid-area: navbar;
+    .header{
+        grid-area: header;
         @include flex-column;
         align-items: center;
         justify-content: flex-start;
