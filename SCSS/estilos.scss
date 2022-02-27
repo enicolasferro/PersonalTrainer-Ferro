@@ -43,7 +43,7 @@ $estilos:(
 }
 
 /* VISTA DESKTOP */
-.layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes{
+.layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes, .layout__contacto{
     display: grid;
     height: 100vh;
     grid-template-areas: "header header"
@@ -71,12 +71,12 @@ $estilos:(
                 width: map-get($estilos, iconos);
             }
         }
-    
             .navbar__nav{
                 @include flex-row;
 
                 .nav-link-active{
                     background-color: map-get($estilos, rojo);
+                    border-radius: 5px;
                 }
 
                 .nav-link{
@@ -88,6 +88,7 @@ $estilos:(
                     
                         &:hover{
                             background-color: map-get($estilos, rojo);
+                            border-radius: 5px;
                         } 
                  }
             }
@@ -135,6 +136,7 @@ $estilos:(
                 margin-top: 20px;
                 padding: 20px;
                 -webkit-text-stroke: 0.3px rgb(0, 0, 0);
+                border-radius: 5px;
             }
         }
 }
@@ -206,6 +208,9 @@ $estilos:(
         .card__cardio, .card__funcional, .card__stretching{
             border-left: 1px dashed black;
             transform: skew(-10deg);
+        }
+        .card__stretching{
+            margin-right: 38px;
         }
             .cards__img{
                 height: 100px;
@@ -289,7 +294,88 @@ $estilos:(
         }
     } 
 }
+    /* CONTACTO SECTION*/
+    .section__contacto{
+        grid-area: section;
+        @include flex-row();
 
+        .section__form{
+            @include flex-column;
+            width: 50%;
+            background: #262626;
+            border-radius: 5px;
+            margin: 100px;
+            box-shadow: 0 0 15px rgba(0,0,0,1);
+
+            .form__titulo{
+                margin-top: 15px;
+                font-size: 50px;
+                font-family: $special-font;
+                letter-spacing: 3px;
+                padding-left: 32px;
+                color: white;
+            }
+            .form__items{
+                @include flex-column; 
+                padding: 16px 32px;
+
+                .label{
+                    padding: 12px 0px;
+                    font-size: 30px;
+                    color: white;
+                    font-family: $normal-font;
+                }
+                .input{
+                    height: 40px;
+                    border:2px solid $plan-red;
+                    text-indent: 10px;
+                    text-transform: capitalize;
+                }
+                .input--consulta{
+                    height: 120px;
+                    border:2px solid $plan-red;
+                    text-indent: 10px;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                }
+                #email{
+                    text-transform: lowercase;
+                }
+                .boton__enviar{
+                    width: 10rem;
+                    padding: 10px;
+                    margin-top: 20px;
+                    font-size: 20px;
+                    background: $plan-red;
+                    color: white;
+                    box-shadow: 0 0 15px rgba(0,0,0,1);
+                    cursor: pointer;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        transition: 0.5s;
+                    }
+                    }
+                }
+            }
+        }
+        .section__map{
+            @include flex-column;
+            width: 50%;
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+            .map__titulo{
+                margin-top: 15px;
+                font-size: 50px;
+                font-family: $special-font;
+                letter-spacing: 3px;
+            }
+            .map{
+                height: 500px;
+                width: 600px;
+        }
+    }
     /*FOOTER*/
     .footer{
         grid-area: footer;
@@ -320,7 +406,7 @@ $estilos:(
 }
 /* VISTA MOBILE (Uso el tamaño de mi celular, Galaxy S20FE */
 @media only screen and (min-width: 0px) and (max-width: 412px){
-.layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes{
+.layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes, .layout__contacto{
     display: grid;
     grid-template-areas: "header header"
                          "section section"
@@ -367,7 +453,8 @@ $estilos:(
         }
     }
 }
-}
+
+
     /* INDEX SECTION*/
     .section__index{
         grid-area: section;
@@ -478,23 +565,19 @@ $estilos:(
         }
     }
     .section__cards{
-        @include flex-row;
+        @include flex-column;
         flex-wrap: wrap;
         justify-items: center;
         text-align: center;
         padding-top: 100px;
         width: auto;
         align-items: center;
+
+        .card__musculacion, .card__cardio, .card__funcional, .card__stretching{
+            border: none;
+            transform: none;
+        }
     }
-        .cards__img{
-            height: 100px;
-            width: 100px;
-        }
-        .cards__titulo{
-            font-size: 40px;
-            margin-top: 20px;
-            margin-bottom: 30px;
-        }
         .cards__texto{
             padding: 15px;
             font-family: $normal-font;
@@ -534,6 +617,7 @@ $estilos:(
                     box-shadow: 1px 1px 20px rgba(0,0,0,0.5);
                     transition: 0.9s;
                     padding: 40px 60px 40px 60px;
+                    margin-left: 0px;
                     
                         &:hover{
                             background: $plan-red;
@@ -570,11 +654,31 @@ $estilos:(
                 }
             }
         }
-    }   
+       /* CONTACTO SECTION*/
+       .section__contacto{
+            grid-area: section;
+            flex-wrap: wrap;
 
+            .section__form{
+                width: 100%;
+            }
+            .section__map{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+
+                .map{
+                    height: 416px;
+                    width: 500px;
+                }
+        }
+    }   
+}
+}
 /* RESPONSIVE DESKTOP */
 @media only screen and (min-width: 413px) and (max-width: 945px){
-.layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes{
+.layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes, .layout__contacto{
     grid-template-rows: 105px 1fr 70px;
 
     .header{
@@ -643,7 +747,7 @@ $estilos:(
                 line-height: 2.5;
             }
         }
-    }
+    
     .container__planes{
         @include flex-column;
         flex-wrap: wrap;
@@ -656,5 +760,24 @@ $estilos:(
                 padding: 40px 80px 40px 80px;
         }
     }
-}
+    .section__contacto{
+        grid-area: section;
+        flex-wrap: wrap;
 
+        .section__form{
+            width: 100%;
+        }
+        .section__map{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+
+            .map{
+                height: 416px;
+                width: 500px;
+            }
+        }
+    }
+}
+}
