@@ -519,20 +519,26 @@
       grid-area: section;
       flex-wrap: wrap; }
       .layout__index .section__contacto .section__form, .layout__entrenamientos .section__contacto .section__form, .layout__sobremi .section__contacto .section__form, .layout__planes .section__contacto .section__form, .layout__contacto .section__contacto .section__form {
-        width: 100%; }
+        width: 100%;
+        margin: 0px;
+        border-radius: 0px; }
       .layout__index .section__contacto .section__map, .layout__entrenamientos .section__contacto .section__map, .layout__sobremi .section__contacto .section__map, .layout__planes .section__contacto .section__map, .layout__contacto .section__contacto .section__map {
         display: flex;
         align-items: center;
         text-align: center;
         width: 100%; }
         .layout__index .section__contacto .section__map .map, .layout__entrenamientos .section__contacto .section__map .map, .layout__sobremi .section__contacto .section__map .map, .layout__planes .section__contacto .section__map .map, .layout__contacto .section__contacto .section__map .map {
-          height: 416px;
-          width: 500px; } }
+          height: 333px;
+          width: 400px; } }
 
 /* RESPONSIVE DESKTOP */
 @media only screen and (min-width: 413px) and (max-width: 945px) {
   .layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes, .layout__contacto {
-    grid-template-rows: 105px 1fr 70px; }
+    grid-template-rows: 105px 1fr 70px;
+    /* HEADER */
+    /* SOBRE MI SECTION */
+    /* ENTRENAMIENTOS SECTION*/
+    /* Planes SECTION*/ }
     .layout__index .header, .layout__entrenamientos .header, .layout__sobremi .header, .layout__planes .header, .layout__contacto .header {
       grid-area: header;
       display: flex;

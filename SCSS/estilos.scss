@@ -12,18 +12,15 @@ $estilos:(
     rojo: #F92C00,
     iconos: 50px,
 );
-
 // Mixins
 @mixin flex-column{
     display:flex;
 	flex-direction:column;
 }
-
 @mixin flex-row{
     display:flex;
 	flex-direction:row;
 }
-
 // Extends
 %titulos{
     color: map-get($estilos, rojo);
@@ -33,7 +30,6 @@ $estilos:(
     letter-spacing: 3px;
     -webkit-text-stroke: map-get($estilos, stroke)    
 }
-
 *{
     margin: 0px;
     padding: 0px;
@@ -41,7 +37,6 @@ $estilos:(
     text-decoration: none;
     list-style-type: none;
 }
-
 /* VISTA DESKTOP */
 .layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes, .layout__contacto{
     display: grid;
@@ -78,7 +73,6 @@ $estilos:(
                     background-color: map-get($estilos, rojo);
                     border-radius: 5px;
                 }
-
                 .nav-link{
                     color: white;
                     font-size: 16px;
@@ -90,9 +84,9 @@ $estilos:(
                             background-color: map-get($estilos, rojo);
                             border-radius: 5px;
                         } 
-                 }
+                }
             }
-        }
+    }
     /* INDEX SECTION*/
     .section__index{
         grid-area: section;
@@ -116,13 +110,12 @@ $estilos:(
             .fondo__titulo{
                 @extend %titulos;
             }
-
             .fondo__titulo--subtitulo{
                 font-size: 40px;
                 padding: 1px;
                 -webkit-text-stroke: 0.5px rgb(0, 0, 0);
-    }
-}
+            }
+        }
         .boton__container{
             @include flex-column;
             justify-content: center;
@@ -139,7 +132,7 @@ $estilos:(
                 border-radius: 5px;
             }
         }
-}
+    }
     /* SOBRE MI SECTION */
     .section__sobremi{
         grid-area: section;
@@ -154,8 +147,7 @@ $estilos:(
             .sobremi-img{
                 width: 55%;
                 height: 100%}
-            }
-
+        }
         .section__container--texto{
             @include flex-column;
             align-items: flex-start;
@@ -172,9 +164,9 @@ $estilos:(
                 line-height: 2.5;
                 margin-right: 60px;
                 font-weight: bold;
-                }
             }
         }
+    }
     /* ENTRENAMIENTOS SECTION*/
     .section__titulo--entrenamientos{
         @include flex-column;
@@ -227,7 +219,7 @@ $estilos:(
                 font-size: 16px;
                 line-height: 2.5;
                 font-weight: bold;
-        }
+            }
     }
     /* Planes SECTION*/
     .section__planes{
@@ -297,7 +289,7 @@ $estilos:(
     /* CONTACTO SECTION*/
     .section__contacto{
         grid-area: section;
-        @include flex-row();
+        @include flex-row;
 
         .section__form{
             @include flex-column;
@@ -355,10 +347,10 @@ $estilos:(
                         transform: scale(1.1);
                         transition: 0.5s;
                     }
-                    }
                 }
-            }
+             }
         }
+    }
         .section__map{
             @include flex-column;
             width: 50%;
@@ -453,8 +445,6 @@ $estilos:(
         }
     }
 }
-
-
     /* INDEX SECTION*/
     .section__index{
         grid-area: section;
@@ -479,14 +469,12 @@ $estilos:(
                 padding: 20px;
                 -webkit-text-stroke: map-get($estilos, stroke);
             }
-
             .fondo__titulo--subtitulo{
                 font-size: 30px;
                 padding: 1px;
                 -webkit-text-stroke: map-get($estilos, stroke);
             }
         }
-
         .boton__container{
             @include flex-column;
             justify-content: center;
@@ -555,7 +543,6 @@ $estilos:(
             font-family: $special-font;
             letter-spacing: 3px;
         }
-        
         .entrenamientos--subtitulo{
             margin-top: 15px;
             font-size: 50px;
@@ -584,7 +571,6 @@ $estilos:(
             font-size: 16px;
             line-height: 2.5;
         }
-
         /* Planes SECTION*/
         .section__planes{
             grid-area: section;
@@ -661,6 +647,8 @@ $estilos:(
 
             .section__form{
                 width: 100%;
+                margin: 0px;
+                border-radius: 0px;
             }
             .section__map{
                 display: flex;
@@ -669,8 +657,8 @@ $estilos:(
                 width: 100%;
 
                 .map{
-                    height: 416px;
-                    width: 500px;
+                    height: 333px;
+                    width: 400px;
                 }
         }
     }   
@@ -681,6 +669,7 @@ $estilos:(
 .layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes, .layout__contacto{
     grid-template-rows: 105px 1fr 70px;
 
+    /* HEADER */
     .header{
         grid-area: header;
         @include flex-column;
@@ -698,9 +687,10 @@ $estilos:(
                 .nav-link{
                     font-size: 10px;
                     padding: 12px 12px;
+                }
             }
-     }
-}
+    }
+    /* SOBRE MI SECTION */
     .section__sobremi{
         grid-area: section;
         @include flex-column;
@@ -709,6 +699,7 @@ $estilos:(
             align-items: center;
         }
     }
+    /* ENTRENAMIENTOS SECTION*/
     .section__titulo--entrenamientos{
         @include flex-column;
         align-items: center;
@@ -716,7 +707,6 @@ $estilos:(
         .entrenamientos--titulo{
             font-size: 30px;
         }
-
         .entrenamientos--subtitulo{
             margin-top: 15px;
             font-size: 50px;
@@ -746,8 +736,8 @@ $estilos:(
                 font-size: 16px;
                 line-height: 2.5;
             }
-        }
-    
+    }
+    /* Planes SECTION*/
     .container__planes{
         @include flex-column;
         flex-wrap: wrap;
@@ -758,8 +748,9 @@ $estilos:(
 
             .plan__diario{
                 padding: 40px 80px 40px 80px;
-        }
+            }
     }
+    /* CONTACTO SECTION*/
     .section__contacto{
         grid-area: section;
         flex-wrap: wrap;
