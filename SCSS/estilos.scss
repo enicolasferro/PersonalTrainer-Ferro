@@ -130,9 +130,14 @@ $estilos:(
                 padding: 20px;
                 -webkit-text-stroke: 0.3px rgb(0, 0, 0);
                 border-radius: 5px;
+
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 0.5s;
             }
         }
     }
+}
     /* SOBRE MI SECTION */
     .section__sobremi{
         grid-area: section;
@@ -167,6 +172,7 @@ $estilos:(
             }
         }
     }
+    
     /* ENTRENAMIENTOS SECTION*/
     .section__titulo--entrenamientos{
         @include flex-column;

@@ -96,6 +96,9 @@
         padding: 20px;
         -webkit-text-stroke: 0.3px black;
         border-radius: 5px; }
+        .layout__index .section__index .boton__container .boton__vermas:hover, .layout__entrenamientos .section__index .boton__container .boton__vermas:hover, .layout__sobremi .section__index .boton__container .boton__vermas:hover, .layout__planes .section__index .boton__container .boton__vermas:hover, .layout__contacto .section__index .boton__container .boton__vermas:hover {
+          transform: scale(1.1);
+          transition: 0.5s; }
   .layout__index .section__sobremi, .layout__entrenamientos .section__sobremi, .layout__sobremi .section__sobremi, .layout__planes .section__sobremi, .layout__contacto .section__sobremi {
     grid-area: section;
     display: flex;
@@ -538,7 +541,8 @@
     /* HEADER */
     /* SOBRE MI SECTION */
     /* ENTRENAMIENTOS SECTION*/
-    /* Planes SECTION*/ }
+    /* Planes SECTION*/
+    /* CONTACTO SECTION*/ }
     .layout__index .header, .layout__entrenamientos .header, .layout__sobremi .header, .layout__planes .header, .layout__contacto .header {
       grid-area: header;
       display: flex;
