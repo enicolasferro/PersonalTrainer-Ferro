@@ -310,8 +310,14 @@
     margin-right: 80px; }
     .footer .footer__icons .whatsapp {
       height: 50px; }
+      .footer .footer__icons .whatsapp:hover {
+        transform: scale(0.9);
+        transition: 0.5s; }
     .footer .footer__icons .instagram {
       height: 50px; }
+      .footer .footer__icons .instagram:hover {
+        transform: scale(1.1);
+        transition: 0.5s; }
 
 /* VISTA MOBILE (Uso el tamaño de mi celular, Galaxy S20FE */
 @media only screen and (min-width: 0px) and (max-width: 412px) {

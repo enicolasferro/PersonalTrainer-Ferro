@@ -396,9 +396,19 @@ $estilos:(
 
             .whatsapp{
                 height: map-get($estilos, iconos);
+
+                &:hover{
+                    transform: scale(0.9);
+                    transition: 0.5s;
+                }
             }
             .instagram{
                 height: map-get($estilos, iconos);
+
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
         }
     }
 }
