@@ -356,7 +356,7 @@
         .layout__index .header .navbar__nav .nav-link, .layout__entrenamientos .header .navbar__nav .nav-link, .layout__sobremi .header .navbar__nav .nav-link, .layout__planes .header .navbar__nav .nav-link, .layout__contacto .header .navbar__nav .nav-link {
           color: white;
           font-size: 10px;
-          padding: 12px 12px;
+          padding: 14px 14px;
           text-decoration: none;
           text-transform: uppercase; }
           .layout__index .header .navbar__nav .nav-link:hover, .layout__entrenamientos .header .navbar__nav .nav-link:hover, .layout__sobremi .header .navbar__nav .nav-link:hover, .layout__planes .header .navbar__nav .nav-link:hover, .layout__contacto .header .navbar__nav .nav-link:hover {
