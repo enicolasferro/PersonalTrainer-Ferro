@@ -355,7 +355,7 @@
         flex-direction: row; }
         .layout__index .header .navbar__nav .nav-link, .layout__entrenamientos .header .navbar__nav .nav-link, .layout__sobremi .header .navbar__nav .nav-link, .layout__planes .header .navbar__nav .nav-link, .layout__contacto .header .navbar__nav .nav-link {
           color: white;
-          font-size: 10px;
+          font-size: 8px;
           padding: 14px 14px;
           text-decoration: none;
           text-transform: uppercase; }
