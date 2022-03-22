@@ -10,7 +10,8 @@ $normal-font: 'Open Sans', sans-serif;
 $estilos:(
     stroke: 0.5px rgb(0, 0, 0),
     rojo: #F92C00,
-    iconos: 50px,
+    iconos: 3.125rem,
+    iconos_m: 2.125rem
 );
 // Mixins
 @mixin flex-column{
@@ -371,7 +372,7 @@ $estilos:(
             }
             .map{
                 height: 500px;
-                width: 600px;
+                width: 100%;
         }
     }
     /*FOOTER*/
@@ -412,8 +413,8 @@ $estilos:(
         }
     }
 }
-/* VISTA MOBILE (Uso el tamaño de mi celular, Galaxy S20FE */
-@media only screen and (min-width: 0px) and (max-width: 412px){
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 680px){
 .layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes, .layout__contacto{
     display: grid;
     grid-template-areas: "header header"
@@ -434,10 +435,11 @@ $estilos:(
 
         .navbar__titulo{
             @include flex-row;
-            font-size: 16px;
+            font-size: 1em;
             text-transform: uppercase;
             padding: 8px;
             align-items: center;
+
             .logo{
                 width: 50px;
             }
@@ -447,8 +449,8 @@ $estilos:(
 
                 .nav-link{
                     color: white;
-                    font-size: 8px;
-                    padding: 14px 14px;
+                    font-size: 0.6em;
+                    padding: 12px 12px;
                     text-decoration: none;
                     text-transform: uppercase;   
 
@@ -472,6 +474,9 @@ $estilos:(
         font-family: $special-font;
         opacity: 0.9;
         color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 
         .section__container{
             @include flex-column;
@@ -529,6 +534,7 @@ $estilos:(
             align-items: center;
             width: 100%;
             justify-content: center;
+            text-align: center;
 
             .container__titulo{
                 font-size: 80px;
@@ -594,7 +600,6 @@ $estilos:(
 
             .section__titulo--planes{
                 @include flex-column;
-                align-items: center;
                 margin-top: 25px;
                 margin-bottom: 20px;
                 
@@ -604,7 +609,9 @@ $estilos:(
                     font-weight: 1000;
                     font-family: $special-font;
                     letter-spacing: 3px;
-                    -webkit-text-stroke: map-get($estilos, stroke)    
+                    -webkit-text-stroke: map-get($estilos, stroke);
+                    width: 100%;
+                    text-align: center;    
                 }
             }
             .container__planes{
@@ -674,17 +681,26 @@ $estilos:(
 
                 .map{
                     height: 333px;
-                    width: 400px;
+                    width: 100%;
                 }
         }
-    }   
+    }
+    /*FOOTER*/
+    .footer{
+    .whatsapp{
+        height: map-get($estilos, iconos_m);
+    }
+    .instagram{
+        height: map-get($estilos, iconos_m);
+    }
+}   
 }
 }
-/* RESPONSIVE DESKTOP */
-@media only screen and (min-width: 413px) and (max-width: 945px){
+/* VISTA TABLET */
+@media only screen and (min-width: 681px) and (max-width: 1023px){
 .layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes, .layout__contacto{
-    grid-template-rows: 105px 1fr 70px;
-
+    grid-template-rows: 120px 1fr 70px;
+    
     /* HEADER */
     .header{
         grid-area: header;
@@ -694,17 +710,23 @@ $estilos:(
 
         .navbar__titulo{
             @include flex-row;
-            font-size: 16px;
+            font-size: 1.5em;
             text-transform: uppercase;
             padding: 8px;
             align-items: center;
         }
             .navbar__nav{
                 .nav-link{
-                    font-size: 10px;
+                    font-size: 1em;
                     padding: 12px 12px;
                 }
             }
+    }
+    /* INDEX SECTION*/
+    .section__index{
+        background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
     }
     /* SOBRE MI SECTION */
     .section__sobremi{
@@ -713,6 +735,7 @@ $estilos:(
     
         .section__container--texto{
             align-items: center;
+            text-align: center;
         }
     }
     /* ENTRENAMIENTOS SECTION*/
@@ -782,7 +805,7 @@ $estilos:(
 
             .map{
                 height: 416px;
-                width: 500px;
+                width: 100%;
             }
         }
     }

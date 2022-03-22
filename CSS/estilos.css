@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 .layout__index .section__index .section__container .fondo__titulo, .layout__entrenamientos .section__index .section__container .fondo__titulo, .layout__sobremi .section__index .section__container .fondo__titulo, .layout__planes .section__index .section__container .fondo__titulo, .layout__contacto .section__index .section__container .fondo__titulo, .layout__index .section__sobremi .section__container--texto .container__titulo, .layout__entrenamientos .section__sobremi .section__container--texto .container__titulo, .layout__sobremi .section__sobremi .section__container--texto .container__titulo, .layout__planes .section__sobremi .section__container--texto .container__titulo, .layout__contacto .section__sobremi .section__container--texto .container__titulo, .layout__index .section__planes .section__titulo--planes .planes--titulo, .layout__entrenamientos .section__planes .section__titulo--planes .planes--titulo, .layout__sobremi .section__planes .section__titulo--planes .planes--titulo, .layout__planes .section__planes .section__titulo--planes .planes--titulo, .layout__contacto .section__planes .section__titulo--planes .planes--titulo {
@@ -43,7 +42,7 @@
       text-transform: uppercase;
       padding: 8px 16px; }
       .layout__index .header .navbar__titulo .logo, .layout__entrenamientos .header .navbar__titulo .logo, .layout__sobremi .header .navbar__titulo .logo, .layout__planes .header .navbar__titulo .logo, .layout__contacto .header .navbar__titulo .logo {
-        width: 50px; }
+        width: 3.125rem; }
     .layout__index .header .navbar__nav, .layout__entrenamientos .header .navbar__nav, .layout__sobremi .header .navbar__nav, .layout__planes .header .navbar__nav, .layout__contacto .header .navbar__nav {
       display: flex;
       flex-direction: row; }
@@ -287,7 +286,7 @@
     letter-spacing: 3px; }
   .section__map .map {
     height: 500px;
-    width: 600px; }
+    width: 100%; }
 
 /*FOOTER*/
 .footer {
@@ -309,18 +308,18 @@
     justify-content: right;
     margin-right: 80px; }
     .footer .footer__icons .whatsapp {
-      height: 50px; }
+      height: 3.125rem; }
       .footer .footer__icons .whatsapp:hover {
         transform: scale(0.9);
         transition: 0.5s; }
     .footer .footer__icons .instagram {
-      height: 50px; }
+      height: 3.125rem; }
       .footer .footer__icons .instagram:hover {
         transform: scale(1.1);
         transition: 0.5s; }
 
-/* VISTA MOBILE (Uso el tamaño de mi celular, Galaxy S20FE */
-@media only screen and (min-width: 0px) and (max-width: 412px) {
+/* VISTA MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 680px) {
   .layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes, .layout__contacto {
     display: grid;
     grid-template-areas: "header header" "section section" "footer footer";
@@ -331,7 +330,8 @@
     /* SOBRE MI SECTION */
     /* ENTRENAMIENTOS SECTION*/
     /* Planes SECTION*/
-    /* CONTACTO SECTION*/ }
+    /* CONTACTO SECTION*/
+    /*FOOTER*/ }
     .layout__index .header, .layout__entrenamientos .header, .layout__sobremi .header, .layout__planes .header, .layout__contacto .header {
       grid-area: header;
       background-color: black;
@@ -344,7 +344,7 @@
       .layout__index .header .navbar__titulo, .layout__entrenamientos .header .navbar__titulo, .layout__sobremi .header .navbar__titulo, .layout__planes .header .navbar__titulo, .layout__contacto .header .navbar__titulo {
         display: flex;
         flex-direction: row;
-        font-size: 16px;
+        font-size: 1em;
         text-transform: uppercase;
         padding: 8px;
         align-items: center; }
@@ -355,8 +355,8 @@
         flex-direction: row; }
         .layout__index .header .navbar__nav .nav-link, .layout__entrenamientos .header .navbar__nav .nav-link, .layout__sobremi .header .navbar__nav .nav-link, .layout__planes .header .navbar__nav .nav-link, .layout__contacto .header .navbar__nav .nav-link {
           color: white;
-          font-size: 8px;
-          padding: 14px 14px;
+          font-size: 0.6em;
+          padding: 12px 12px;
           text-decoration: none;
           text-transform: uppercase; }
           .layout__index .header .navbar__nav .nav-link:hover, .layout__entrenamientos .header .navbar__nav .nav-link:hover, .layout__sobremi .header .navbar__nav .nav-link:hover, .layout__planes .header .navbar__nav .nav-link:hover, .layout__contacto .header .navbar__nav .nav-link:hover {
@@ -373,7 +373,10 @@
       justify-content: center;
       font-family: "Bebas Neue", cursive;
       opacity: 0.9;
-      color: white; }
+      color: white;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
       .layout__index .section__index .section__container, .layout__entrenamientos .section__index .section__container, .layout__sobremi .section__index .section__container, .layout__planes .section__index .section__container, .layout__contacto .section__index .section__container {
         display: flex;
         flex-direction: column;
@@ -420,7 +423,8 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        justify-content: center; }
+        justify-content: center;
+        text-align: center; }
         .layout__index .section__sobremi .section__container--texto .container__titulo, .layout__entrenamientos .section__sobremi .section__container--texto .container__titulo, .layout__sobremi .section__sobremi .section__container--texto .container__titulo, .layout__planes .section__sobremi .section__container--texto .container__titulo, .layout__contacto .section__sobremi .section__container--texto .container__titulo {
           font-size: 80px;
           font-weight: 1000;
@@ -473,7 +477,6 @@
       .layout__index .section__planes .section__titulo--planes, .layout__entrenamientos .section__planes .section__titulo--planes, .layout__sobremi .section__planes .section__titulo--planes, .layout__planes .section__planes .section__titulo--planes, .layout__contacto .section__planes .section__titulo--planes {
         display: flex;
         flex-direction: column;
-        align-items: center;
         margin-top: 25px;
         margin-bottom: 20px; }
         .layout__index .section__planes .section__titulo--planes .planes--titulo, .layout__entrenamientos .section__planes .section__titulo--planes .planes--titulo, .layout__sobremi .section__planes .section__titulo--planes .planes--titulo, .layout__planes .section__planes .section__titulo--planes .planes--titulo, .layout__contacto .section__planes .section__titulo--planes .planes--titulo {
@@ -482,7 +485,9 @@
           font-weight: 1000;
           font-family: "Bebas Neue", cursive;
           letter-spacing: 3px;
-          -webkit-text-stroke: 0.5px black; }
+          -webkit-text-stroke: 0.5px black;
+          width: 100%;
+          text-align: center; }
       .layout__index .section__planes .container__planes, .layout__entrenamientos .section__planes .container__planes, .layout__sobremi .section__planes .container__planes, .layout__planes .section__planes .container__planes, .layout__contacto .section__planes .container__planes {
         display: flex;
         flex-direction: column;
@@ -538,13 +543,18 @@
         width: 100%; }
         .layout__index .section__contacto .section__map .map, .layout__entrenamientos .section__contacto .section__map .map, .layout__sobremi .section__contacto .section__map .map, .layout__planes .section__contacto .section__map .map, .layout__contacto .section__contacto .section__map .map {
           height: 333px;
-          width: 400px; } }
+          width: 100%; }
+    .layout__index .footer .whatsapp, .layout__entrenamientos .footer .whatsapp, .layout__sobremi .footer .whatsapp, .layout__planes .footer .whatsapp, .layout__contacto .footer .whatsapp {
+      height: 2.125rem; }
+    .layout__index .footer .instagram, .layout__entrenamientos .footer .instagram, .layout__sobremi .footer .instagram, .layout__planes .footer .instagram, .layout__contacto .footer .instagram {
+      height: 2.125rem; } }
 
-/* RESPONSIVE DESKTOP */
-@media only screen and (min-width: 413px) and (max-width: 945px) {
+/* VISTA TABLET */
+@media only screen and (min-width: 681px) and (max-width: 1023px) {
   .layout__index, .layout__entrenamientos, .layout__sobremi, .layout__planes, .layout__contacto {
-    grid-template-rows: 105px 1fr 70px;
+    grid-template-rows: 120px 1fr 70px;
     /* HEADER */
+    /* INDEX SECTION*/
     /* SOBRE MI SECTION */
     /* ENTRENAMIENTOS SECTION*/
     /* Planes SECTION*/
@@ -558,19 +568,24 @@
       .layout__index .header .navbar__titulo, .layout__entrenamientos .header .navbar__titulo, .layout__sobremi .header .navbar__titulo, .layout__planes .header .navbar__titulo, .layout__contacto .header .navbar__titulo {
         display: flex;
         flex-direction: row;
-        font-size: 16px;
+        font-size: 1.5em;
         text-transform: uppercase;
         padding: 8px;
         align-items: center; }
       .layout__index .header .navbar__nav .nav-link, .layout__entrenamientos .header .navbar__nav .nav-link, .layout__sobremi .header .navbar__nav .nav-link, .layout__planes .header .navbar__nav .nav-link, .layout__contacto .header .navbar__nav .nav-link {
-        font-size: 10px;
+        font-size: 1em;
         padding: 12px 12px; }
+    .layout__index .section__index, .layout__entrenamientos .section__index, .layout__sobremi .section__index, .layout__planes .section__index, .layout__contacto .section__index {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
     .layout__index .section__sobremi, .layout__entrenamientos .section__sobremi, .layout__sobremi .section__sobremi, .layout__planes .section__sobremi, .layout__contacto .section__sobremi {
       grid-area: section;
       display: flex;
       flex-direction: column; }
       .layout__index .section__sobremi .section__container--texto, .layout__entrenamientos .section__sobremi .section__container--texto, .layout__sobremi .section__sobremi .section__container--texto, .layout__planes .section__sobremi .section__container--texto, .layout__contacto .section__sobremi .section__container--texto {
-        align-items: center; }
+        align-items: center;
+        text-align: center; }
     .layout__index .section__titulo--entrenamientos, .layout__entrenamientos .section__titulo--entrenamientos, .layout__sobremi .section__titulo--entrenamientos, .layout__planes .section__titulo--entrenamientos, .layout__contacto .section__titulo--entrenamientos {
       display: flex;
       flex-direction: column;
@@ -623,4 +638,4 @@
         width: 100%; }
         .layout__index .section__contacto .section__map .map, .layout__entrenamientos .section__contacto .section__map .map, .layout__sobremi .section__contacto .section__map .map, .layout__planes .section__contacto .section__map .map, .layout__contacto .section__contacto .section__map .map {
           height: 416px;
-          width: 500px; } }
+          width: 100%; } }
