@@ -162,7 +162,7 @@ $estilos:(
 
             .container__titulo{
                 @extend %titulos;
-                font-size: 65px;
+                font-size: 80px;
             }
             .container__texto{
                 font-family: $normal-font;
@@ -537,7 +537,7 @@ $estilos:(
             text-align: center;
 
             .container__titulo{
-                font-size: 80px;
+                font-size: 65px;
                 font-weight: 1000;
                 color: map-get($estilos, rojo);
                 font-family: $special-font;
@@ -585,6 +585,7 @@ $estilos:(
         .card__musculacion, .card__cardio, .card__funcional, .card__stretching{
             border: none;
             transform: none;
+            margin: auto;
         }
     }
         .cards__texto{
@@ -592,6 +593,7 @@ $estilos:(
             font-family: $normal-font;
             font-size: 16px;
             line-height: 2.5;
+            margin: auto;
         }
         /* Planes SECTION*/
         .section__planes{
@@ -761,9 +763,10 @@ $estilos:(
         width: auto;
         align-items: center;
 
-        .card__cardio, .card__funcional, .card__stretching{
+        .card__cardio, .card__funcional, .card__stretching, .card__musculacion{
             transform: none;
             border: none;
+            
         }
             .cards__titulo{
                 font-size: 40px;

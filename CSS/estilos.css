@@ -117,7 +117,7 @@
       width: 100%;
       justify-content: center; }
       .layout__index .section__sobremi .section__container--texto .container__titulo, .layout__entrenamientos .section__sobremi .section__container--texto .container__titulo, .layout__sobremi .section__sobremi .section__container--texto .container__titulo, .layout__planes .section__sobremi .section__container--texto .container__titulo, .layout__contacto .section__sobremi .section__container--texto .container__titulo {
-        font-size: 65px; }
+        font-size: 80px; }
       .layout__index .section__sobremi .section__container--texto .container__texto, .layout__entrenamientos .section__sobremi .section__container--texto .container__texto, .layout__sobremi .section__sobremi .section__container--texto .container__texto, .layout__planes .section__sobremi .section__container--texto .container__texto, .layout__contacto .section__sobremi .section__container--texto .container__texto {
         font-family: "Open Sans", sans-serif;
         font-size: 20px;
@@ -426,7 +426,7 @@
         justify-content: center;
         text-align: center; }
         .layout__index .section__sobremi .section__container--texto .container__titulo, .layout__entrenamientos .section__sobremi .section__container--texto .container__titulo, .layout__sobremi .section__sobremi .section__container--texto .container__titulo, .layout__planes .section__sobremi .section__container--texto .container__titulo, .layout__contacto .section__sobremi .section__container--texto .container__titulo {
-          font-size: 80px;
+          font-size: 65px;
           font-weight: 1000;
           color: #F92C00;
           font-family: "Bebas Neue", cursive;
@@ -465,12 +465,14 @@
       align-items: center; }
       .layout__index .section__cards .card__musculacion, .layout__index .section__cards .card__cardio, .layout__index .section__cards .card__funcional, .layout__index .section__cards .card__stretching, .layout__entrenamientos .section__cards .card__musculacion, .layout__entrenamientos .section__cards .card__cardio, .layout__entrenamientos .section__cards .card__funcional, .layout__entrenamientos .section__cards .card__stretching, .layout__sobremi .section__cards .card__musculacion, .layout__sobremi .section__cards .card__cardio, .layout__sobremi .section__cards .card__funcional, .layout__sobremi .section__cards .card__stretching, .layout__planes .section__cards .card__musculacion, .layout__planes .section__cards .card__cardio, .layout__planes .section__cards .card__funcional, .layout__planes .section__cards .card__stretching, .layout__contacto .section__cards .card__musculacion, .layout__contacto .section__cards .card__cardio, .layout__contacto .section__cards .card__funcional, .layout__contacto .section__cards .card__stretching {
         border: none;
-        transform: none; }
+        transform: none;
+        margin: auto; }
     .layout__index .cards__texto, .layout__entrenamientos .cards__texto, .layout__sobremi .cards__texto, .layout__planes .cards__texto, .layout__contacto .cards__texto {
       padding: 15px;
       font-family: "Open Sans", sans-serif;
       font-size: 16px;
-      line-height: 2.5; }
+      line-height: 2.5;
+      margin: auto; }
     .layout__index .section__planes, .layout__entrenamientos .section__planes, .layout__sobremi .section__planes, .layout__planes .section__planes, .layout__contacto .section__planes {
       grid-area: section;
       width: 100%; }
@@ -605,7 +607,7 @@
       padding-top: 100px;
       width: auto;
       align-items: center; }
-      .layout__index .section__cards .card__cardio, .layout__index .section__cards .card__funcional, .layout__index .section__cards .card__stretching, .layout__entrenamientos .section__cards .card__cardio, .layout__entrenamientos .section__cards .card__funcional, .layout__entrenamientos .section__cards .card__stretching, .layout__sobremi .section__cards .card__cardio, .layout__sobremi .section__cards .card__funcional, .layout__sobremi .section__cards .card__stretching, .layout__planes .section__cards .card__cardio, .layout__planes .section__cards .card__funcional, .layout__planes .section__cards .card__stretching, .layout__contacto .section__cards .card__cardio, .layout__contacto .section__cards .card__funcional, .layout__contacto .section__cards .card__stretching {
+      .layout__index .section__cards .card__cardio, .layout__index .section__cards .card__funcional, .layout__index .section__cards .card__stretching, .layout__index .section__cards .card__musculacion, .layout__entrenamientos .section__cards .card__cardio, .layout__entrenamientos .section__cards .card__funcional, .layout__entrenamientos .section__cards .card__stretching, .layout__entrenamientos .section__cards .card__musculacion, .layout__sobremi .section__cards .card__cardio, .layout__sobremi .section__cards .card__funcional, .layout__sobremi .section__cards .card__stretching, .layout__sobremi .section__cards .card__musculacion, .layout__planes .section__cards .card__cardio, .layout__planes .section__cards .card__funcional, .layout__planes .section__cards .card__stretching, .layout__planes .section__cards .card__musculacion, .layout__contacto .section__cards .card__cardio, .layout__contacto .section__cards .card__funcional, .layout__contacto .section__cards .card__stretching, .layout__contacto .section__cards .card__musculacion {
         transform: none;
         border: none; }
       .layout__index .section__cards .cards__titulo, .layout__entrenamientos .section__cards .cards__titulo, .layout__sobremi .section__cards .cards__titulo, .layout__planes .section__cards .cards__titulo, .layout__contacto .section__cards .cards__titulo {
